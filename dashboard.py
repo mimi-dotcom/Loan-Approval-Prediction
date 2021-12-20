@@ -7,6 +7,8 @@ import numpy as np
 pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
+st.title("Loan Approval Predictor")
+
 
 @st.cache
 def prediction(Gender, Married, ApplicantIncome, LoanAmount,
